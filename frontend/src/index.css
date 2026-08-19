@@ -1,0 +1,57 @@
+:root {
+  --bg: #12151a;
+  --panel: #1b2027;
+  --panel-alt: #232a33;
+  --border: #2c3541;
+  --text: #e7e9ec;
+  --text-muted: #8a93a0;
+  --accent: #d98e3f;
+  --accent-soft: rgba(217, 142, 63, 0.15);
+  --route: #3fa9a0;
+  --danger: #c0524a;
+  --font-display: "IBM Plex Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--accent-soft);
+}
+
+/* Leaflet dark tuning */
+.leaflet-container {
+  background: #0e1116;
+  font-family: var(--font-display);
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: var(--panel);
+  color: var(--text);
+}
