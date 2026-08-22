@@ -40,6 +40,7 @@ build/
 !.env.example
 *.pem
 secrets.json
+appsettings.json
 
 # ============================
 # Azure / despliegue
