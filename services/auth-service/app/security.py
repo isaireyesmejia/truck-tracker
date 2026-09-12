@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 import bcrypt
-from jose import jwt
+import jwt
 from datetime import datetime, timedelta
 
 JWT_SECRET = os.getenv("JWT_SECRET")

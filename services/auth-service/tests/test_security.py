@@ -1,5 +1,5 @@
 from app.security import hash_password, verify_password, create_access_token
-from jose import jwt
+import jwt
 import os
 from dotenv import load_dotenv
 
