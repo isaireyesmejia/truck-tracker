@@ -25,6 +25,7 @@ jobs:
         env:
           JWT_SECRET: ${{ secrets.AUTH_JWT_SECRET_TEST }}
           DATABASE_URL: postgresql://user:pass@localhost:5432/placeholder
+          TEST_DATABASE_URL: postgresql://user:pass@localhost:5432/placeholder
         run: pytest tests/test_security.py -v
 
   integration-tests:
